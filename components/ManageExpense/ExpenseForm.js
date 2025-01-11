@@ -68,7 +68,7 @@ const ExpenseForm = ({ btnLabel, onCancel, onSubmit, defaultValues }) => {
         isValid: false,
       }));
     }
-    if (!amountIsValid || dateIsValid || descriptionIsValid) {
+    if (!amountIsValid || !dateIsValid || !descriptionIsValid) {
       return Alert.alert("Invalid input!", "Pls check your input alert");
     }
 
